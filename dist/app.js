@@ -45,10 +45,6 @@
 /***/ (function(module, exports) {
 
 	"use strict";
-	
-	var myConst = 6;
-	
-	console.log(myConst);
 
 /***/ })
 /******/ ]);

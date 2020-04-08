@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>02-05-symbol</title>
+</head>
+<body>
+
+
+<script>
+var numtest = 13;
+    var a = Symbol('Descrição do Symbol a'),
+        b = Symbol('Descrição do Symbol b');
+
+    var myobj = {};
+    myobj.prop1 = a;
+    myobj.prop2 = b;
+    myobj[numtest] = 2;
+    myobj.prop4 = numtest;
+    console.log(myobj[numtest]);  
+    console.log(numtest);
+    console.log(myobj);  
+
+    let user = {
+        id: 9451,
+        name: 'André',
+        city: 'Fortaleza'
+    }
+
+    const idSymbol = Symbol('id');
+    user[idSymbol] =  1231241244;
+    user.id = 8764;
+    console.log(user);
+
+</script>
+</body>
+</html>
